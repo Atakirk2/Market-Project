@@ -2,17 +2,14 @@ import Brands from './FilteringAndSorting/Brands';
 import Sorting from './FilteringAndSorting/Sorting';
 import Tags from './FilteringAndSorting/Tags';
 import classes from './FilterAndSort.module.css'
-function FilterAndSort (){
+function FilterAndSort (props){
 
     return(
         <div className={classes.container}>
-            <Brands />
             <Sorting />
-            <Tags />
+            <Brands />
+            <Tags setCheckedTags={props.setCheckedTags} />
         </div>
     )
     }
-    
-    
-    
     export default FilterAndSort;
