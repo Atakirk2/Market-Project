@@ -3,14 +3,29 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 .container{
+    width: 296px;
+    height: 214px;
+    margin-top: 30px;
+}
+.container p {
+    margin-bottom: 5px;
+    color: #697488;
+}
+.sortingOptions{
     background-color: white;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    width: 296px;
+    height: 184px;
 }
 .element{
     margin: 5% 0;
+    display: flex;
+    align-items: center;
+}
+.element label{
+    margin-left: 5px;
 }

@@ -1,0 +1,42 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    height: 41px;
+    width: 231px;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.leftHalf{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.rightHalf{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 74px;
+    height: 32px;
+}
+.itemPrice{
+    color: #1EA4CE;
+    font-weight: 650;
+}
+.itemQuantity{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1EA4CE;
+    width: 32px;
+    height: 32px;
+    text-align: center;  
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.plusMinus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

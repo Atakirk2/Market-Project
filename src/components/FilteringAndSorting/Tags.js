@@ -40,13 +40,16 @@ function Tags(props) {
   }
   return (
     <div className={classes.container}>
-      <input onChange={handleSearch} type="text" placeholder="Search..." />
+      <p>Tags</p>
+      <div className={classes.tags}>
+      <input className={classes.searchbar} onChange={handleSearch} type="text" placeholder="Search tag" />
       {filteredTags.map((tag) => (
-        <label key={tag}>
-          <input type="checkbox" value={tag} onChange={handleChange} />
+        <label className={classes.brandLabel} key={tag}>
+          <input type="checkbox" value={tag} onChange={handleChange} className={classes.checkboxStyle} />
           {tag}
         </label>
       ))}
+      </div>
     </div>
   );
 }

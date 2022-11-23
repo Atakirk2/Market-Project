@@ -1,0 +1,29 @@
+.container{
+    background-color: #1EA4CE;
+    height: 76px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+.logo{
+    width: 7%;
+}
+.basket{
+    background-color: #147594;
+    width: 130px;
+    height: 76px;
+    position: absolute;
+    right: 0;
+    margin-right: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.totalPrice{
+    color: white;
+    margin-left: 10px;
+}
+.bagIcon{
+    color: white;
+}

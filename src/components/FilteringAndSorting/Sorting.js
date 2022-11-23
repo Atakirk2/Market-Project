@@ -12,6 +12,8 @@ function Sorting() {
 
   return (
     <div className={classes.container}>
+      <p>Sorting</p>
+      <div className={classes.sortingOptions}>
       <div className={classes.element}>
         <input
           type="radio"
@@ -58,6 +60,7 @@ function Sorting() {
         />
         <label for="oldToNew">Old To New</label>
         <br />
+      </div>
       </div>
     </div>
   );

@@ -1,4 +1,88 @@
-.container{
-    max-height: 90vh;
-    overflow-y: scroll;
+.container {
+  height: 1008px;
+  width: 608px;
+  margin-top:25px;
+}
+.container p {
+  color: #6F6F6F;
+  font-size:20px;
+}
+.itemGrid {
+  height: 850px;
+  width: 568px;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(4, 25%);
+  row-gap: 20px;
+  margin-bottom: 100px;
+
+}
+.itemFilter{
+  display: flex;
+  flex-direction: row;
+  gap:10px;
+  width: 130px;
+  height: 30px;
+  margin:10px 0;
+}
+.filterActive{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #1EA4CE;
+  color:#F2F0FD;
+  cursor:pointer;
+}
+.filterPassive{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #F2F0FD;
+  color:#1EA4CE;
+  cursor:pointer;
+}
+@media only screen and (max-width: 1000px) {
+  .itemGrid {
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(3, 33%);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .itemGrid {
+    grid-template-columns: repeat(2, 45%);
+    grid-template-rows: repeat(2, 45%);
+  }
+}
+
+
+/*PAGINATION STYLING*/
+.pagination {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 5rem;
+  font-size: 1.2rem;
+  gap: 5px;
+}
+.pagination .pageNum {
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-weight: 400;
+}
+.pagination .pageNum:hover {
+  background-color: #1ea4ce;
+  color: #fff;
+}
+.pagination .active {
+  background-color: #1ea4ce;
+}
+.paginationDiv{
+    width: 500px;
+    height: 50px;
 }

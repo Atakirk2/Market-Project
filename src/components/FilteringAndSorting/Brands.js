@@ -26,13 +26,17 @@ function Brands() {
 
   return (
     <div className={classes.container}>
-      <input onChange={searchToggle} type="text" placeholder="Search..." />
+      <p>Brands</p>
+      <div className={classes.brands}>
+      <input className={classes.searchbar} onChange={searchToggle} type="text" placeholder="Search brand" />
       {companies.filteredCompanies.map((company) => (
-        <label key={company.account}>
-        <input type="checkbox" value={company.slug} onChange={toggleCheck}/>
+        <label key={company.account} className={classes.brandLabel}>
+          <span className={classes.checkmark}></span>
+        <input type="checkbox" value={company.slug} onChange={toggleCheck} className={classes.checkboxStyle}/>
         {company.name}
       </label>
       ))}
+      </div>
     </div>
   );
 }

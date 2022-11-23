@@ -1,6 +1,6 @@
 import Products from '../Products'
 import FilterAndSort from '../FilterAndSort'
-import Basket from '../Basket'
+import Basket from '../Basket/Basket'
 import classes from './Body.module.css'
 import { useState } from 'react'
 

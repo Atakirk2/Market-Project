@@ -1,10 +1,45 @@
+.container p{
+  margin-bottom: 5px;
+  color: #697488;
+}
 .container{
-    display: flex;
-    flex-direction: column;
-    display: flex;
-    flex-direction: column;
-    overflow: auto;
-    max-height: 25vh;
-    height: 25vh;
-    width: 25vh;
+  width: 296px;
+  height: 274px;
+}
+.tags {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  max-height: 25vh;
+  height: 244px;
+  width: 296px;
+  background-color: white;
+  padding: 1rem 0 1rem 1rem;
+}
+.searchbar {
+  border: 1px solid #e0e0e0;
+  padding: 7px 0px 7px 8px;
+  height: 48px;
+  width: 248px;
+}
+.brandLabel {
+  margin: 5px 0 5px 0px;
+}
+.checkboxStyle {
+  margin-right: 7px;
+
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e0e0e0;
+  border-radius: 10px;
 }

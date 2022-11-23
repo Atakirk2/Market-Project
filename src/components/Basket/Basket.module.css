@@ -1,0 +1,32 @@
+.container{
+    width: 296px;
+    height: 338px;
+    border: 10px solid #1EA4CE;
+    margin-top: 50px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.basketItemsContainer{
+    overflow-y: scroll;
+    padding-left: 20px;
+    height: 250px;
+}
+.totalPrice{
+    align-self: flex-end;
+    position: absolute;
+    bottom: 0;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 2px solid #1ea4ce;
+    color: #1ea4ce;
+    width: 92px;
+    height: 51px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+}

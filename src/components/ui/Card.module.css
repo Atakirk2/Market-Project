@@ -1,4 +1,39 @@
-.coverImg{
-    max-width: 100px;
-    max-height: 125px;
+.coverImg {
+  width: 92px;
+  height: 92px;
+}
+.imgDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 124px;
+  height: 124px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 124px;
+  height: 225px;
+}
+.itemName {
+  height: 30px;
+  width: 124px;
+}
+.container h4{
+  color:#1EA4CE;
+  width: 124px;
+  height: 23px;
+}
+.container button{
+  width: 100%;
+  border: 0;
+  color: white;
+  background-color: #1EA4CE;
+  width: 124px;
+  height: 22px;
+}
+.container button:active{
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }
